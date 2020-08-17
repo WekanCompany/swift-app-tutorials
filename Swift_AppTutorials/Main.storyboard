@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S9f-7C-bBO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S9f-7C-bBO">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -115,15 +115,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Settings"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09i-Tk-IeV">
+                                <rect key="frame" x="64" y="332" width="192" height="32"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.47450980390000003" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="IMp-Lt-49P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Save"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rSD-wm-QAW" firstAttribute="leading" secondItem="3NW-1b-U4R" secondAttribute="trailing" constant="12" id="52z-lt-XDT"/>
                             <constraint firstItem="rJX-be-4nz" firstAttribute="trailing" secondItem="8t9-UR-21a" secondAttribute="trailing" id="Fdt-IG-DRX"/>
                             <constraint firstItem="rSD-wm-QAW" firstAttribute="top" secondItem="3NW-1b-U4R" secondAttribute="top" id="MnQ-sc-ic9"/>
+                            <constraint firstItem="09i-Tk-IeV" firstAttribute="centerX" secondItem="cB4-uo-NcT" secondAttribute="centerX" id="PEk-GZ-DLe"/>
                             <constraint firstItem="rJX-be-4nz" firstAttribute="top" secondItem="8t9-UR-21a" secondAttribute="bottom" constant="8" id="Vg5-TH-G5D"/>
                             <constraint firstItem="8t9-UR-21a" firstAttribute="trailing" secondItem="rSD-wm-QAW" secondAttribute="trailing" id="YHv-d0-RoJ"/>
                             <constraint firstItem="3NW-1b-U4R" firstAttribute="leading" secondItem="cB4-uo-NcT" secondAttribute="leading" constant="20" id="aFA-e1-Wis"/>
+                            <constraint firstItem="09i-Tk-IeV" firstAttribute="top" secondItem="rJX-be-4nz" secondAttribute="bottom" constant="200" id="bqR-j9-JFW"/>
                             <constraint firstItem="3NW-1b-U4R" firstAttribute="top" secondItem="oSd-km-PFF" secondAttribute="bottom" constant="20" id="eGb-gd-F0x"/>
                             <constraint firstItem="8t9-UR-21a" firstAttribute="top" secondItem="rSD-wm-QAW" secondAttribute="bottom" constant="8" id="jcI-pO-O36"/>
                             <constraint firstItem="8t9-UR-21a" firstAttribute="leading" secondItem="rSD-wm-QAW" secondAttribute="leading" id="qDd-Me-SWn"/>
@@ -135,6 +146,7 @@
                         <outlet property="btnTut1" destination="rSD-wm-QAW" id="ahH-Y6-oM9"/>
                         <outlet property="btnTut2" destination="8t9-UR-21a" id="f6J-Ol-5g1"/>
                         <outlet property="btnTut3" destination="rJX-be-4nz" id="iHK-dC-XRN"/>
+                        <outlet property="btnTut4" destination="09i-Tk-IeV" id="acb-hZ-OJy"/>
                         <outlet property="imvTut" destination="3NW-1b-U4R" id="fyk-TT-0BG"/>
                     </connections>
                 </viewController>

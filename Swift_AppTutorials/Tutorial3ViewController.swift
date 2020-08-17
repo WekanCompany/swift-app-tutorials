@@ -15,7 +15,8 @@ class Tutorial3ViewController: UIViewController {
   @IBOutlet weak var btnTut1: UIButton!
   @IBOutlet weak var btnTut2: UIButton!
   @IBOutlet weak var btnTut3: UIButton!
-  
+  @IBOutlet weak var btnTut4: UIButton!
+
   lazy var tutorialVC: KJOverlayTutorialViewController = {
     return KJOverlayTutorialViewController()
   }()
@@ -73,8 +74,16 @@ class Tutorial3ViewController: UIViewController {
     let message4Center = CGPoint(x: self.view.bounds.width/2, y: icon4Frame.maxY + 24)
     let tut4 = KJTutorial.textWithIconTutorial(focusRectangle: focusRect4, text: message4, textPosition: message4Center, icon: icon4, iconFrame: icon4Frame)
     
+    // tut5
+    let focusRect5 = self.btnTut4.frame
+    let icon5 = UIImage(from: .fontAwesome, code: "handoup", textColor: .white, backgroundColor: .clear, size: CGSize(width: 72, height: 72))
+    let icon5Frame = CGRect(x: self.view.bounds.width/2-72/2, y: focusRect5.maxY + 12, width: 72, height: 72)
+    let message5 = "Tap to save all  the changes"
+    let message5Center = CGPoint(x: self.view.bounds.width/2, y: icon5Frame.maxY + 24)
+    let tut5 = KJTutorial.textWithIconTutorial(focusRectangle: focusRect5, text: message5, textPosition: message5Center, icon: icon5, iconFrame: icon5Frame)
+
     // tuts
-    let tutorials = [tut1, tut2, tut3, tut4]
+    let tutorials = [tut1, tut2, tut3, tut4, tut5]
     self.tutorialVC.tutorials = tutorials
     self.tutorialVC.showInViewController(self)
   }
